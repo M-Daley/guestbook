@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Heledd Sohn",
+        "address": "2990 Colonial Swale, Dogpatch, MT, 59746",
+        "contact": "(406) 835-0027",
+        "room": "F4",
+        "checked": false
+    },
+    {
+        "name": "Tai Rojo",
+        "address": "938 Rustic Alley, Oregon House, ND, 58221",
+        "contact": "701-007-4807",
+        "room": "D11",
+        "checked": true
+    },
+    {
+        "name": " Williams Limon",
+        "address": "7305 Dewy Jetty, Town Talk, ID, 83424",
+        "contact": "12085251655",
+        "room": "C2",
+        "checked": false
+    },
+    {
+        "name": "Jayvyn Claros",
+        "address": "9606 Golden Abbey, Midas, IN, 46588",
+        "contact": "1 (574) 422 5717",
+        "room": "D4",
+        "checked": false
+    },
+    {
+        "name": "Mladen Whitesell",
+        "address": "1620 Blue Ramp, Bitter Lick, CO, 81953",
+        "contact": "(303)738-2367",
+        "room": "A11",
+        "checked": true
+    },
+    {
+        "name": "Nirvelli Claros",
+        "address": "4767 Red Route, Damascus, ID, 83645",
+        "contact": "(208) 695-2605",
+        "room": "B5",
+        "checked": true
+    },
+    {
+        "name": "Devi Rojo",
+        "address": "520 Quiet Anchor Close, Helix, MO, 64813",
+        "contact": "1 (314) 799-4778",
+        "room": "E3",
+        "checked": true
+    },
+    {
+        "name": "Keiko Rojo",
+        "address": "6899 Rocky Drive, Hurricane, WV, 25845",
+        "contact": "6819099444",
+        "room": "C2",
+        "checked": true
+    },
+    {
+        "name": "Aldercy Swaim",
+        "address": "1301 Heather Hickory Path, Promised Land, MO, 64756",
+        "contact": "(636) 271-5241",
+        "room": "D5",
+        "checked": false
+    },
+    {
+        "name": "Viviana Swaim",
+        "address": "9054 Wishing Beacon Arbor, Paw Paw, IN, 46149",
+        "contact": "317 5486675",
+        "room": "A2",
+        "checked": true
+    },
+    {
+        "name": "Heledd Sohn",
+        "address": "2990 Colonial Swale, Dogpatch, MT, 59746",
+        "contact": "(406) 835-0027",
+        "room": "F4",
+        "checked": false
+    },
+    {
+        "name": "Tai Rojo",
+        "address": "938 Rustic Alley, Oregon House, ND, 58221",
+        "contact": "701-007-4807",
+        "room": "D11",
+        "checked": true
+    },
+    {
+        "name": " Williams Limon",
+        "address": "7305 Dewy Jetty, Town Talk, ID, 83424",
+        "contact": "12085251655",
+        "room": "C2",
+        "checked": false
+    },
+    {
+        "name": "Jayvyn Claros",
+        "address": "9606 Golden Abbey, Midas, IN, 46588",
+        "contact": "1 (574) 422 5717",
+        "room": "D4",
+        "checked": false
+    },
+    {
+        "name": "Mladen Whitesell",
+        "address": "1620 Blue Ramp, Bitter Lick, CO, 81953",
+        "contact": "(303)738-2367",
+        "room": "A11",
+        "checked": true
+    },
+    {
+        "name": "Nirvelli Claros",
+        "address": "4767 Red Route, Damascus, ID, 83645",
+        "contact": "(208) 695-2605",
+        "room": "B5",
+        "checked": true
+    },
+    {
+        "name": "Devi Rojo",
+        "address": "520 Quiet Anchor Close, Helix, MO, 64813",
+        "contact": "1 (314) 799-4778",
+        "room": "E3",
+        "checked": true
+    },
+    {
+        "name": "Keiko Rojo",
+        "address": "6899 Rocky Drive, Hurricane, WV, 25845",
+        "contact": "6819099444",
+        "room": "C2",
+        "checked": true
+    },
+    {
+        "name": "Aldercy Swaim",
+        "address": "1301 Heather Hickory Path, Promised Land, MO, 64756",
+        "contact": "(636) 271-5241",
+        "room": "D5",
+        "checked": false
+    },
+    {
+        "name": "Viviana Swaim",
+        "address": "9054 Wishing Beacon Arbor, Paw Paw, IN, 46149",
+        "contact": "317 5486675",
+        "room": "A2",
+        "checked": true
+    }
+]

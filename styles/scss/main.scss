@@ -1,0 +1,151 @@
+// Breakpoints for media queries
+$grid__bp-sm: 576;
+$grid__bp-md: 768;
+$grid__bp-lg: 992;
+$grid__bp-xl: 1200;
+
+// Number of Columns to divide the page width into
+$grid__cols: 12;
+
+// Used to map break points to column types
+$map-grid-props: (
+    '': 0,
+    '-sm': $grid__bp-sm,
+    '-md': $grid__bp-md,
+    '-lg': $grid__bp-lg,
+    '-xl': $grid__bp-xl
+);
+
+// Dynamically creates media queires at the passed through breakpoint
+@mixin create-mq($breakpoint) {
+    @if($breakpoint == 0) {
+        @content;
+    } @else {
+        @media screen and (min-width: $breakpoint * 1px) {
+            @content;
+        }
+    }
+}
+
+// Uses the "create-mq" function to build different classes all responsive.
+@mixin create-col-classes($modifier, $grid__cols, $breakpoint) {
+    @include create-mq($breakpoint) {
+        @for $i from 1 through $grid__cols {
+            .col#{$modifier}-#{$i} {
+                // border: 1px solid red;
+                position: relative;
+                flex-basis: (100 / ($grid__cols / $i)) * 1%;
+            }
+        }
+    }
+}
+
+// Container for Guestbook
+.container {
+    max-width: $grid__bp-md * 1px;
+    margin: 0 auto;
+
+    &--fluid {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    &--fill {
+        height: 100vh;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+}
+
+.overflow {
+    overflow: auto;
+}
+
+// Generates responsive col elements that divide the width of a page into $grid__col amount of chunks
+@each $modifier, $breakpoint in $map-grid-props {
+    @include create-col-classes($modifier, $grid__cols, $breakpoint);
+}
+
+// Creates top (t), bottom (b), left (l), right (r), padding (p), margin (m), height (h) and width (w) classes 1-100 for each px of padding
+@for $i from 0 through 100 {
+    .p-#{$i} {
+        padding: $i * 1px;
+    }
+
+    .m-#{$i} {
+        margin: $i * 1px;
+    }
+
+    .h-#{$i} {
+        height: $i * 1px;
+    }
+
+    .w-#{$i} {
+        width: $i * 1px;
+    }
+
+    .t-#{$i} {
+        top: $i * 1%;
+        transform: translateY($i * -1%);
+    }
+
+    .b-#{$i} {
+        bottom: $i * 1%;
+        transform: translateY($i * 1%);
+    }
+
+    .r-#{$i} {
+        right: $i * 1%;
+        transform: translateX($i * 1%);
+    }
+    
+    .l-#{$i} {
+        left: $i * 1%;
+        transform: translateX($i * -1%);
+    }
+}
+
+.m {
+    &-auto {
+        margin: 0 auto;
+    }
+}
+
+.a {
+    position: absolute;
+
+    &--center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.checked {
+    height: 25px;
+    width: 25px;
+    background-color: forestgreen;
+    border-radius: 50%;
+}
+
+.checkedout {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
