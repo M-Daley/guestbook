@@ -1,30 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Guest Book powered by Next.js/MongoDB Atlas
 
-## Getting Started
+<img src="./images/markdown-preview.png" alt="Guest Book App" width="375px" height="auto">
 
-First, run the development server:
+To run this in a development server clone this project then copy, paste and run this command in your terminal.
 
 ```bash
-npm run dev
+npm run dev && start firefox localhost:3000
 # or
-yarn dev
+yarn dev && start firefox localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Guest Book
+This application is a guest book of randomly generated guests which stay in a fictional hotel. Guests can have any information edited, be checked in or checked out or outright deleted. Information for each guest is stored in the MongoDB Atlas where client-side fetching populates and paginates the Guest Book Display making the entire app serverless! Next.js the main framework used for constructing components.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+*Although there is Bootstrap like syntax all styles are custom made using Scss*
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Poke around and add any fun changes to make this demo app suit your needs!
